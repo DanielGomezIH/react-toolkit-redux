@@ -33,7 +33,7 @@ Este repositorio contiene una serie de ejercicios diseñados para ayudarte a apr
 
 1. Clona este repositorio:
    ```sh
-   git clone https://github.com/tu-usuario/redux-toolkit-ejercicios.git
+   git clone https://github.com/tu-usuario/react-toolkit-redux.git
 
 2. ```sh 
    cd redux-toolkit-ejercicios
