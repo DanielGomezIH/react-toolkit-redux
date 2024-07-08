@@ -1,8 +1,46 @@
-# React + Vite
+# Ejercicios de Redux Toolkit
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este repositorio contiene una serie de ejercicios diseñados para ayudarte a aprender y practicar el uso de Redux Toolkit en aplicaciones de React. Cada ejercicio se centra en diferentes aspectos y funcionalidades de Redux Toolkit, incluyendo la configuración del store, la creación de slices, la gestión del estado asíncrono con Thunks, y la implementación de patrones comunes en Redux.
 
-Currently, two official plugins are available:
+## Contenido del Repositorio
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Ejercicio 1: Configuración Básica**
+  - Configura un store de Redux utilizando Redux Toolkit.
+  - Crea un slice básico con estado inicial y reducers simples.
+
+- **Ejercicio 2: Acciones y Reducers**
+  - Aprende a definir y manejar acciones y reducers dentro de un slice.
+  - Implementa lógica de negocio sencilla para actualizar el estado.
+
+- **Ejercicio 3: Estado Asíncrono con Thunks**
+  - Utiliza Thunks para manejar operaciones asíncronas.
+  - Realiza solicitudes HTTP y gestiona el estado de carga y errores.
+
+- **Ejercicio 4: Selectores y Normalización de Datos**
+  - Crea selectores para extraer y transformar datos del estado.
+  - Aprende a normalizar datos complejos para mejorar la eficiencia de acceso al estado.
+
+- **Ejercicio 5: Middleware y DevTools**
+  - Configura middlewares adicionales para manejar lógica personalizada.
+  - Integra Redux DevTools para mejorar la experiencia de desarrollo.
+
+## Requisitos
+
+- Conocimientos básicos de React y JavaScript.
+- Familiaridad con los conceptos fundamentales de Redux.
+
+## Cómo Empezar
+
+1. Clona este repositorio:
+   ```sh
+   git clone https://github.com/tu-usuario/redux-toolkit-ejercicios.git
+
+2. ```sh 
+   cd redux-toolkit-ejercicios
+
+3. ```sh
+    pnpm install
+
+4. ```sh
+   pnpm run dev
+
