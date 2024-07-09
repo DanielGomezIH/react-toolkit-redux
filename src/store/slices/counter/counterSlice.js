@@ -5,14 +5,20 @@ export const counterSlice = createSlice( {
   name: 'counter',
 
   initialState: {
-    counter: 10
+    counter: 10,
   },
 
   reducers: {
     increment: ( state ) => {
       state.counter += 1;
     },
+    incrementByAmount: ( state, action ) => {
+      state.counter += action.payload;
+    },
+    decrement: ( state ) => {
+      state.counter -= 1;
+    },
   },
 } );
 
-export const { increment } = counterSlice.actions;
+export const { increment, incrementByAmount, decrement } = counterSlice.actions;

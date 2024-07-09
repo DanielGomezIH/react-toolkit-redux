@@ -1,15 +1,26 @@
-import { useState } from 'react';
+import { useDispatch } from 'react-redux';
+import { useSelector } from 'react-redux';
+import { increment, incrementByAmount, decrement } from './store/slices/counter';
 
 function App() {
-  const [ count, setCount ] = useState( 0 );
+
+  const { counter } = useSelector( ( state ) => state.counter );
+  const dispatch = useDispatch();
+
 
   return (
     <div className="container">
-      <h1>Vite + React</h1>
+      <h1>Count is { counter }</h1>
 
       <div>
-        <button onClick={ () => setCount( ( count ) => count + 1 ) }>
-          count is { count }
+        <button onClick={ () => dispatch( increment() ) }>
+          Increment
+        </button>
+        <button onClick={ () => dispatch( decrement() ) }>
+          Decrement
+        </button>
+        <button onClick={ () => dispatch( incrementByAmount( 2 ) ) }>
+          Increment by 2
         </button>
       </div>
 
